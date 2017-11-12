@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		021689881F033CD5001F58D9 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021689871F033CD5001F58D9 /* ItemDetailVC.swift */; };
+		024AE1B01FB89501000349A3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AE1AF1FB89501000349A3 /* CustomTextField.swift */; };
 		0256C13F1F01E28B007872F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C13E1F01E28B007872F7 /* AppDelegate.swift */; };
 		0256C1411F01E28B007872F7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C1401F01E28B007872F7 /* MainVC.swift */; };
 		0256C1441F01E28B007872F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0256C1421F01E28B007872F7 /* Main.storyboard */; };
@@ -22,13 +23,13 @@
 		0256C1721F01F4BA007872F7 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C16A1F01F4BA007872F7 /* Image+CoreDataProperties.swift */; };
 		0256C1731F01F4BA007872F7 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C16B1F01F4BA007872F7 /* Store+CoreDataClass.swift */; };
 		0256C1741F01F4BA007872F7 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C16C1F01F4BA007872F7 /* Store+CoreDataProperties.swift */; };
-		0256C17C1F01F834007872F7 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C17B1F01F834007872F7 /* CustomTextField.swift */; };
 		0256C17F1F01F894007872F7 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C17E1F01F894007872F7 /* MaterialView.swift */; };
 		0256C1811F027FB8007872F7 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0256C1801F027FB8007872F7 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021689871F033CD5001F58D9 /* ItemDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		024AE1AF1FB89501000349A3 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		0256C13B1F01E28B007872F7 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0256C13E1F01E28B007872F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0256C1401F01E28B007872F7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		0256C16A1F01F4BA007872F7 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0256C16B1F01F4BA007872F7 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0256C16C1F01F4BA007872F7 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0256C17B1F01F834007872F7 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = "../../iosApp/Assets/DreamLister Assets/CustomTextField.swift"; sourceTree = "<group>"; };
 		0256C17E1F01F894007872F7 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		0256C1801F027FB8007872F7 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,7 +128,7 @@
 		0256C17D1F01F86C007872F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0256C17B1F01F834007872F7 /* CustomTextField.swift */,
+				024AE1AF1FB89501000349A3 /* CustomTextField.swift */,
 				0256C17E1F01F894007872F7 /* MaterialView.swift */,
 				0256C1801F027FB8007872F7 /* ItemCell.swift */,
 			);
@@ -162,12 +162,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Reggie;
 				TargetAttributes = {
 					0256C13A1F01E28B007872F7 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6BL885WGZZ;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -212,13 +213,13 @@
 				0256C1701F01F4BA007872F7 /* Item+CoreDataProperties.swift in Sources */,
 				0256C16F1F01F4BA007872F7 /* Item+CoreDataClass.swift in Sources */,
 				0256C17F1F01F894007872F7 /* MaterialView.swift in Sources */,
+				024AE1B01FB89501000349A3 /* CustomTextField.swift in Sources */,
 				0256C1811F027FB8007872F7 /* ItemCell.swift in Sources */,
 				0256C16D1F01F4BA007872F7 /* ItemType+CoreDataClass.swift in Sources */,
 				0256C1741F01F4BA007872F7 /* Store+CoreDataProperties.swift in Sources */,
 				0256C1711F01F4BA007872F7 /* Image+CoreDataClass.swift in Sources */,
 				0256C16E1F01F4BA007872F7 /* ItemType+CoreDataProperties.swift in Sources */,
 				0256C1411F01E28B007872F7 /* MainVC.swift in Sources */,
-				0256C17C1F01F834007872F7 /* CustomTextField.swift in Sources */,
 				0256C1731F01F4BA007872F7 /* Store+CoreDataClass.swift in Sources */,
 				0256C13F1F01E28B007872F7 /* AppDelegate.swift in Sources */,
 				021689881F033CD5001F58D9 /* ItemDetailVC.swift in Sources */,
@@ -258,7 +259,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -266,7 +269,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -308,7 +315,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -316,7 +325,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -350,7 +363,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = staptix.com.DreamLister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -363,7 +377,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = staptix.com.DreamLister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
